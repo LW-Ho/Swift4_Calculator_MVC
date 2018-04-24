@@ -74,7 +74,9 @@ class ViewController: UIViewController {
         if let result = operation.result {
             displayValue = result
             if !operandBool {
-                showNumLabel.text = displayValue
+                if mathematicalInt == 2 {showNumLabel.text = "±(" + outputLabel.text! + ")"}
+                else {showNumLabel.text = displayValue}
+                
             }
         }
     }
@@ -85,19 +87,19 @@ class ViewController: UIViewController {
         print("In the addStraddStringToShowNumber Function.")
         switch addMathematical {
         case 2:
-            showNumLabel.text = "±(" + showNumLabel.text! + ")"
+            showNumLabel.text = "±(" + outputLabel.text! + ")"
             operandBool = false
         case 3:
             operandBool = false
-            showNumLabel.text = showNumLabel.text!// + " ﹪ "
+            showNumLabel.text = displayValue// + " ﹪ "
         case 4:
-            showNumLabel.text = showNumLabel.text! + " ÷ "
+            showNumLabel.text = displayValue + " ÷ "
         case 5:
-            showNumLabel.text = showNumLabel.text! + " × "
+            showNumLabel.text = displayValue + " × "
         case 6:
-            showNumLabel.text = showNumLabel.text! + " − "
+            showNumLabel.text = displayValue + " − "
         case 7:
-            showNumLabel.text = showNumLabel.text! + " + "
+            showNumLabel.text = displayValue + " + "
             break
         default:
             break

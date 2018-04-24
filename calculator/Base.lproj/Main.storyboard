@@ -61,11 +61,10 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hg9-HO-RNG">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ee-3H-Gh7" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ee-3H-Gh7" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="104"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                        <state key="normal" title="AC"/>
+                                                        <state key="normal" title="AC" image="AC"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
@@ -73,11 +72,10 @@
                                                             <action selector="goToDefault:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C69-1D-TFc"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJa-I6-BlW" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJa-I6-BlW" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
                                                         <rect key="frame" x="95.666666666666686" y="0.0" width="88" height="104"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                        <state key="normal" title="+/-"/>
+                                                        <state key="normal" title="+/-" image="-"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
@@ -85,11 +83,10 @@
                                                             <action selector="functionOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AaS-wu-UrJ"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp0-Xg-fAR" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp0-Xg-fAR" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
                                                         <rect key="frame" x="191.66666666666666" y="0.0" width="87.666666666666657" height="104"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                        <state key="normal" title="%"/>
+                                                        <state key="normal" title="%" image="%"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
@@ -97,11 +94,10 @@
                                                             <action selector="functionOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1O6-Bn-Bf5"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eV1-e3-Pnm" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eV1-e3-Pnm" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
                                                         <rect key="frame" x="287.33333333333331" y="0.0" width="87.666666666666686" height="104"/>
                                                         <color key="backgroundColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                        <state key="normal" title="÷"/>
+                                                        <state key="normal" title="÷" image="除號"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
@@ -114,10 +110,9 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="78m-Da-21n">
                                                 <rect key="frame" x="0.0" y="112" width="375" height="104"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAb-P8-ws0" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAb-P8-ws0" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="104"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                        <state key="normal" title="𝟕"/>
+                                                        <state key="normal" title="𝟕" image="7"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
@@ -125,10 +120,9 @@
                                                             <action selector="digitBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lCY-Ob-Ext"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTh-4e-OyJ" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTh-4e-OyJ" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
                                                         <rect key="frame" x="95.666666666666686" y="0.0" width="88" height="104"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                        <state key="normal" title="𝟖"/>
+                                                        <state key="normal" title="𝟖" image="8"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
@@ -136,10 +130,9 @@
                                                             <action selector="digitBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kJr-5a-8mn"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bvn-Rx-p51" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
+                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bvn-Rx-p51" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
                                                         <rect key="frame" x="191.66666666666666" y="0.0" width="87.666666666666657" height="104"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                        <state key="normal" title="𝟗"/>
+                                                        <state key="normal" title="𝟗" image="9"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
@@ -147,11 +140,10 @@
                                                             <action selector="digitBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HRW-mC-Xd4"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtR-Gm-6ww" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtR-Gm-6ww" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
                                                         <rect key="frame" x="287.33333333333331" y="0.0" width="87.666666666666686" height="104"/>
                                                         <color key="backgroundColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                        <state key="normal" title="×"/>
+                                                        <state key="normal" title="×" image="x"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
@@ -165,10 +157,9 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lvq-QJ-gcN">
                                                 <rect key="frame" x="0.0" y="224" width="375" height="104"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ka7-eZ-UIp" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ka7-eZ-UIp" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="104"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                        <state key="normal" title="𝟒"/>
+                                                        <state key="normal" title="𝟒" image="4"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
@@ -176,10 +167,9 @@
                                                             <action selector="digitBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nHX-YR-B2K"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWT-lr-GiT" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWT-lr-GiT" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
                                                         <rect key="frame" x="95.666666666666686" y="0.0" width="88" height="104"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                        <state key="normal" title="𝟓"/>
+                                                        <state key="normal" title="𝟓" image="5"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
@@ -187,10 +177,9 @@
                                                             <action selector="digitBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wn1-ua-C5d"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKV-U4-jeS" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKV-U4-jeS" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
                                                         <rect key="frame" x="191.66666666666666" y="0.0" width="87.666666666666657" height="104"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                        <state key="normal" title="𝟔"/>
+                                                        <state key="normal" title="𝟔" image="6"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
@@ -198,11 +187,10 @@
                                                             <action selector="digitBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jy0-71-sBJ"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nns-5F-5le" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nns-5F-5le" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
                                                         <rect key="frame" x="287.33333333333331" y="0.0" width="87.666666666666686" height="104"/>
                                                         <color key="backgroundColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                        <state key="normal" title="−"/>
+                                                        <state key="normal" title="−" image="減號"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
@@ -216,10 +204,9 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kV3-KC-f0V">
                                                 <rect key="frame" x="0.0" y="336" width="375" height="104"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mN-WN-h2y" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mN-WN-h2y" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="104"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                        <state key="normal" title="𝟏"/>
+                                                        <state key="normal" title="𝟏" image="1"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
@@ -227,10 +214,9 @@
                                                             <action selector="digitBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rxh-6J-52o"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MsV-Ve-FQx" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MsV-Ve-FQx" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
                                                         <rect key="frame" x="95.666666666666686" y="0.0" width="88" height="104"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                        <state key="normal" title="𝟐"/>
+                                                        <state key="normal" title="𝟐" image="2"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
@@ -238,10 +224,9 @@
                                                             <action selector="digitBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gkk-69-HX0"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60D-tp-HOu" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60D-tp-HOu" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
                                                         <rect key="frame" x="191.66666666666666" y="0.0" width="87.666666666666657" height="104"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                        <state key="normal" title="𝟑"/>
+                                                        <state key="normal" title="𝟑" image="3"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
@@ -249,11 +234,10 @@
                                                             <action selector="digitBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DBb-2e-eRY"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Di-iX-vlC" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Di-iX-vlC" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
                                                         <rect key="frame" x="287.33333333333331" y="0.0" width="87.666666666666686" height="104"/>
                                                         <color key="backgroundColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                        <state key="normal" title="+"/>
+                                                        <state key="normal" title="+" image="加號"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
@@ -267,10 +251,9 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wwI-LE-Vhr">
                                                 <rect key="frame" x="0.0" y="448" width="375" height="104"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9OY-hf-64P" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9OY-hf-64P" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="183.66666666666666" height="104"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                        <state key="normal" title="𝟎"/>
+                                                        <state key="normal" title="𝟎" image="0"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
@@ -281,10 +264,9 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nrE-yx-jVn">
                                                         <rect key="frame" x="191.66666666666663" y="0.0" width="183.33333333333337" height="104"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecc-FS-KBd" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecc-FS-KBd" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="104"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                                <state key="normal" title="∙"/>
+                                                                <state key="normal" title="∙" image="dot"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                                                 </userDefinedRuntimeAttributes>
@@ -292,11 +274,10 @@
                                                                     <action selector="dotNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YSP-NC-yKk"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efc-Mu-kfT" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
+                                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efc-Mu-kfT" customClass="RoundButton" customModule="calculator" customModuleProvider="target">
                                                                 <rect key="frame" x="95.666666666666657" y="0.0" width="87.666666666666657" height="104"/>
                                                                 <color key="backgroundColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                                <state key="normal" title="="/>
+                                                                <state key="normal" title="=" image="等號"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                                                 </userDefinedRuntimeAttributes>
@@ -345,4 +326,25 @@
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="%" width="1144" height="845"/>
+        <image name="-" width="1022" height="762"/>
+        <image name="0" width="431" height="652"/>
+        <image name="1" width="425" height="671"/>
+        <image name="2" width="965" height="632"/>
+        <image name="3" width="601" height="737"/>
+        <image name="4" width="837" height="824"/>
+        <image name="5" width="605" height="739"/>
+        <image name="6" width="561" height="693"/>
+        <image name="7" width="681" height="827"/>
+        <image name="8" width="747" height="751"/>
+        <image name="9" width="368" height="717"/>
+        <image name="AC" width="1043" height="676"/>
+        <image name="dot" width="495" height="374"/>
+        <image name="x" width="822" height="671"/>
+        <image name="加號" width="938" height="796"/>
+        <image name="減號" width="1010" height="206"/>
+        <image name="等號" width="746" height="436"/>
+        <image name="除號" width="1069" height="757"/>
+    </resources>
 </document>
