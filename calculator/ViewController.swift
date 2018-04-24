@@ -9,19 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initLabel()
         // Do any additional setup after loading the view, typically from a nib.
     }
-    var typpingBool = false
-
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//
-//    }
+    private var typpingBool = false
+    private var operandBool = false
+    private var dotFlag = false
+    
+    //    override func didReceiveMemoryWarning() {
+    //        super.didReceiveMemoryWarning()
+    //        // Dispose of any resources that can be recreated.
+    //
+    //    }
     
     @IBAction func digitBtn(_ sender: UIButton) {
         let digitLabel = sender.tag - 1
@@ -35,17 +37,20 @@ class ViewController: UIViewController {
         }
     }
     
-    var displayValue: Double {
+    var displayValue: String {
         get {
-            return Double(outputLabel.text!)!
+            return outputLabel.text!
         }
         set {
-            if floor(newValue) == newValue {
-                outputLabel.text = "\(Int(newValue))"
+            let fixDotZero = Double(newValue)!
+            if floor(fixDotZero) == fixDotZero {
+                outputLabel.text = "\(Int(fixDotZero))"
             }else {
-                outputLabel.text = String(newValue)
+                if operandBool {
+                    outputLabel.text = newValue
+                }
             }
-            
+        
         }
     }
     
@@ -54,25 +59,72 @@ class ViewController: UIViewController {
     @IBAction func functionOperation(_ sender: UIButton) {
         let mathematicalInt = sender.tag
         if typpingBool {
+            if !operandBool {
+                showNumLabel.text = outputLabel.text!
+            }else {
+                showNumLabel.text = showNumLabel.text! + outputLabel.text! + " = "
+            }
+            
             operation.passValue(displayValue)
             typpingBool = false
         }
         if mathematicalInt > 0 {
+            //showNumLabel.text = outputLabel.text! // copy the output.
+            if !operandBool {addStringToShowNumber(mathematicalInt)}
             print("Go to Binary Operation ...")
             operation.performedOperation(mathematicalInt)
+            dotFlag = false
         }
         if let result = operation.result {
-            displayValue = result
+            if  mathematicalInt != 3 { displayValue = result }
         }
-        
+    }
+    
+    private func addStringToShowNumber(_ addMathematical: Int){
+        operandBool = true
+        //dotFlag = true
+        print("In the addStraddStringToShowNumber Function.")
+        switch addMathematical {
+        case 2:
+            showNumLabel.text = "±(" + displayValue + ")"
+            operandBool = false
+        //case 3:
+            //operandBool = false
+            //showNumLabel.text = displayValue + " ﹪ "
+        case 4:
+            showNumLabel.text = displayValue + " ÷ "
+        case 5:
+            showNumLabel.text = displayValue + " × "
+        case 6:
+            showNumLabel.text = displayValue + " − "
+        case 7:
+            showNumLabel.text = displayValue + " + "
+            break
+        default:
+            break
+        }
+    }
+    @IBAction func dotNumber(_ sender: UIButton) {
+        if !dotFlag {
+            outputLabel.text = outputLabel.text! + "."
+            dotFlag = true
+        }
+    }
+    @IBAction func goToDefault(_ sender: UIButton) {
+        initLabel()
     }
     
     @IBOutlet weak var showNumLabel: UILabel!
     @IBOutlet weak var outputLabel: UILabel!
     
     private func initLabel() {
-        showNumLabel.text = ""
+        operation.passValue("0")
+        showNumLabel.text = "0"
         outputLabel.text = "0"
+        typpingBool = false
+        operandBool = false
+        dotFlag = false
     }
-
+    
 }
+
