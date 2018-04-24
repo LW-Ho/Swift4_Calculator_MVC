@@ -46,11 +46,10 @@ class ViewController: UIViewController {
             if floor(fixDotZero) == fixDotZero {
                 outputLabel.text = "\(Int(fixDotZero))"
             }else {
-                if operandBool {
+                //if operandBool {
                     outputLabel.text = newValue
-                }
+                //}
             }
-        
         }
     }
     
@@ -59,12 +58,9 @@ class ViewController: UIViewController {
     @IBAction func functionOperation(_ sender: UIButton) {
         let mathematicalInt = sender.tag
         if typpingBool {
-            if !operandBool {
-                showNumLabel.text = outputLabel.text!
-            }else {
+            if operandBool {
                 showNumLabel.text = showNumLabel.text! + outputLabel.text! + " = "
             }
-            
             operation.passValue(displayValue)
             typpingBool = false
         }
@@ -76,7 +72,10 @@ class ViewController: UIViewController {
             dotFlag = false
         }
         if let result = operation.result {
-            if  mathematicalInt != 3 { displayValue = result }
+            displayValue = result
+            if !operandBool {
+                showNumLabel.text = displayValue
+            }
         }
     }
     
@@ -86,19 +85,19 @@ class ViewController: UIViewController {
         print("In the addStraddStringToShowNumber Function.")
         switch addMathematical {
         case 2:
-            showNumLabel.text = "±(" + displayValue + ")"
+            showNumLabel.text = "±(" + showNumLabel.text! + ")"
             operandBool = false
-        //case 3:
-            //operandBool = false
-            //showNumLabel.text = displayValue + " ﹪ "
+        case 3:
+            operandBool = false
+            showNumLabel.text = showNumLabel.text!// + " ﹪ "
         case 4:
-            showNumLabel.text = displayValue + " ÷ "
+            showNumLabel.text = showNumLabel.text! + " ÷ "
         case 5:
-            showNumLabel.text = displayValue + " × "
+            showNumLabel.text = showNumLabel.text! + " × "
         case 6:
-            showNumLabel.text = displayValue + " − "
+            showNumLabel.text = showNumLabel.text! + " − "
         case 7:
-            showNumLabel.text = displayValue + " + "
+            showNumLabel.text = showNumLabel.text! + " + "
             break
         default:
             break

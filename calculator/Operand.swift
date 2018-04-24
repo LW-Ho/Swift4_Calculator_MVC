@@ -35,15 +35,11 @@ struct CalculatorOperand {
             switch operation {
             case .changeAssign:
                 if accumulator != nil {
-                    print("In changeAssign ...")
                     accumulator = String(Double(accumulator!)! * -1)
-                    print(accumulator)
                 }
             case .percentTage:
                 if accumulator != nil {
-                    print("In PercentTage ...")
                     accumulator = String(Double(accumulator!)! * 0.01)
-                    print(accumulator)
                 }
             case .binaryOperation(let function):
                 if accumulator != nil {
@@ -60,7 +56,6 @@ struct CalculatorOperand {
     private mutating func performPendingBinaryOperation() {
         if pendingBinaryOperation != nil && accumulator != nil {
             accumulator! = String(pendingBinaryOperation!.perform(with: Double(accumulator!)!))
-            print(accumulator)
             pendingBinaryOperation = nil
         }
     }
