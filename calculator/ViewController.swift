@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     private var typpingBool = false
     private var operandBool = false
     private var dotFlag = false
+    private var overOperation = false
     
     //    override func didReceiveMemoryWarning() {
     //        super.didReceiveMemoryWarning()
@@ -27,12 +28,14 @@ class ViewController: UIViewController {
     
     @IBAction func digitBtn(_ sender: UIButton) {
         let digitLabel = sender.tag - 1
-        if outputLabel != nil {
-            if !typpingBool {
-                outputLabel.text = "\(digitLabel)"
-                typpingBool = true
-            } else {
-                outputLabel.text = outputLabel.text! + "\(digitLabel)"
+        if !overOperation {
+            if outputLabel != nil {
+                if !typpingBool {
+                    outputLabel.text = "\(digitLabel)"
+                    typpingBool = true
+                } else {
+                    outputLabel.text = outputLabel.text! + "\(digitLabel)"
+                }
             }
         }
     }
@@ -57,28 +60,32 @@ class ViewController: UIViewController {
     
     @IBAction func functionOperation(_ sender: UIButton) {
         let mathematicalInt = sender.tag
-        if typpingBool {
-            if operandBool {
-                showNumLabel.text = showNumLabel.text! + outputLabel.text! + " = "
+        if !overOperation {
+            if typpingBool {
+                if operandBool {
+                    showNumLabel.text = showNumLabel.text! + outputLabel.text! + " = "
+                    overOperation = true
+                }
+                operation.passValue(displayValue)
+                typpingBool = false
             }
-            operation.passValue(displayValue)
-            typpingBool = false
-        }
-        if mathematicalInt > 0 {
-            //showNumLabel.text = outputLabel.text! // copy the output.
-            if !operandBool {addStringToShowNumber(mathematicalInt)}
-            print("Go to Binary Operation ...")
-            operation.performedOperation(mathematicalInt)
-            dotFlag = false
-        }
-        if let result = operation.result {
-            displayValue = result
-            if !operandBool {
-                if mathematicalInt == 2 {showNumLabel.text = "±(" + outputLabel.text! + ")"}
-                else {showNumLabel.text = displayValue}
-                
+            if mathematicalInt > 0 {
+                //showNumLabel.text = outputLabel.text! // copy the output.
+                if !operandBool {addStringToShowNumber(mathematicalInt)}
+                print("Go to Binary Operation ...")
+                operation.performedOperation(mathematicalInt)
+                dotFlag = false
+            }
+            if let result = operation.result {
+                displayValue = result
+                if !operandBool {
+                    if mathematicalInt == 2 {showNumLabel.text = "±(" + outputLabel.text! + ")"}
+                    else {showNumLabel.text = displayValue}
+                    
+                }
             }
         }
+        
     }
     
     private func addStringToShowNumber(_ addMathematical: Int){
@@ -125,6 +132,7 @@ class ViewController: UIViewController {
         typpingBool = false
         operandBool = false
         dotFlag = false
+        overOperation = false
     }
     
 }
